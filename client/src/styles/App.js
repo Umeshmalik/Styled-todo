@@ -2,18 +2,18 @@ import styled from "@emotion/styled";
 
 export const Container = styled.section`
     height: 100vh;
-    margin: 0% 10%;
-    background-color: #0a3843;
+    margin: 0% 7.25%;
+    background-color: #181824;
 `;
 
 export const ImageContainer = styled.img`
-    height: 35%;
+    height: 37.5%;
     width: 100%;
 `
 
 export const ModalContainer = styled.section`
     position: absolute;
     top: 10%;
-    left: 35%;
-    right: 35%;
+    left: 34%;
+    right: 34%;
 `;

@@ -8,4 +8,5 @@ export const InputContainer = styled.input`
     font-size: 16px;
     border-radius: 5px;
     padding: 5px 15px;
+    background-color: #25273c;
 `;
