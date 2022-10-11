@@ -17,6 +17,37 @@ const addTask = async (req, res) => {
     }
 }
 
+const getTasks = async (req, res) => {
+    try{
+        const tasks = await Todo.find()
+        return res.status(200).json(tasks)
+    }catch(err){
+        throw new Error(err);
+    }
+}
+
+const deleteAll = async (req, res) => {
+    try{
+        const tasks = await Todo.deleteMany()
+        return res.status(200).json(tasks)
+    }catch(err){
+        throw new Error(err);
+    }
+}
+
+const updateStatus = async (req, res) => {
+    try{
+        const {status, taskId} = req.body;
+        const tasks = await Todo.updateOne({taskId}, {$set: {status}})
+        return res.status(200).json(tasks)
+    }catch(err){
+        throw new Error(err);
+    }
+}
+
 module.exports = {
-    addTask
+    addTask,
+    getTasks,
+    deleteAll,
+    updateStatus
 }

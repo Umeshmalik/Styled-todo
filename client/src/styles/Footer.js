@@ -17,4 +17,5 @@ export const SectionTwo = styled.div`
 `;
 export const SectionThree = styled.div`
     font-size: 10px;
+    cursor: pointer;
 `;

@@ -9,6 +9,8 @@ export const Card = styled.div`
 
 export const Row = styled.div`
     padding: 10px;
+    text-decoration: ${props => props?.cross ? 'line-through' : 'none'};
+    cursor: pointer;
 `
 
 export const HR = styled.hr`
