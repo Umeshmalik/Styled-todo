@@ -8,7 +8,8 @@ module.exports = () => {
         res.send("Yupp! Working fine")
     })
     .post("/", (req, res)=>{
-        res.json(res.body)
+        console.log(req.body);
+        res.json(res.body);
     })
     .use(todoRoutes())
     
