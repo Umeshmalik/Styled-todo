@@ -11,7 +11,7 @@ const push = async(req, res) => {
             to_branch: branch,
             timestamp: createdAt
         })
-        res.send("Done")
+        res.json({message: "success"})
     }catch(err){
         throw new Error(err)
     }
@@ -29,7 +29,7 @@ const pullRequest = async (req, res) => {
             to_branch,
             timestamp: createdAt
         })
-        res.send("Done")
+        res.json({message: "success"})
     }catch(err){
         throw new Error(err)
     }
@@ -47,7 +47,7 @@ const mergePR = async (req, res) => {
             to_branch,
             timestamp: createdAt
         })
-        res.send("Done")
+        res.json({message: "success"})
     }catch(err){
         throw new Error(err)
     }
