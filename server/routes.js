@@ -7,6 +7,9 @@ module.exports = () => {
     router.get("/", (req, res) => {
         res.send("Yupp! Working fine")
     })
+    .post("/", (req, res)=>{
+        res.json(res.body)
+    })
     .use(todoRoutes())
     
     return router
